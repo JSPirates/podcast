@@ -1,4 +1,9 @@
-podcast
-=======
+#JSPirates Podcast
 
-Code for the JSPirates podcasts
+Этот репозиторий хранит в себе код и другую информацию, о которой мы говорим в подкасте JSPirates.
+
+Ведущие подкаста: [Борис Егоров](http://github.com/dolphin278) и [Григорий Ситнин](http://github.com/sitnin).
+
+##s01e01
+
+Эпизод, в котором мы рассказываем о LevelDb и работе со стримами.
