@@ -15,7 +15,7 @@ var pipeline = es.pipeline(
         this.queue({
             "key": data.title,
             "value": data
-        });  
+        });
     }),
     db.createWriteStream()
 );
@@ -28,7 +28,5 @@ pipeline.on('close', function () {
         limit: 1,
         reverse: true
     });
-    prefixStream.on('data', function (data) {
-        console.log('data', data);
-    });
+    prefixStream.on('data', consol.log.bind(console, "data->"));
 });
