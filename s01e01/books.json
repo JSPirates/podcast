@@ -1,0 +1,36 @@
+[
+    {
+        "isbn10": "0321804333",
+        "title": "Android Programming: The Big Nerd Ranch Guide (Big Nerd Ranch Guides)",
+        "authors": [
+            "Bill Phillips",
+            "Brian Hardy"
+        ],
+        "price": 32
+    },
+    {
+        "isbn10": "0321821521",
+        "title": "iOS Programming: The Big Nerd Ranch Guide (3rd Edition)",
+        "authors": [
+            "Joe Conway",
+            "Aaron Hillegass"
+        ],
+        "price": 33.36
+    },
+    {
+        "isbn10": "0321706285",
+        "title": "Objective-C Programming: The Big Nerd Ranch Guide",
+        "authors": [
+            "Aaron Hillegass"
+        ],
+        "price": 25.85
+    },
+    {
+        "isbn10": "0321706286",
+        "title": "iOS Programming: Good parts",
+        "authors": [
+            "Joe Conway"
+        ],
+        "price": 36.20
+    }
+]
