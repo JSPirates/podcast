@@ -6,8 +6,8 @@
 
 * Level: [https://github.com/Level/level](https://github.com/Level/level)
 * LevelUP: [https://github.com/rvagg/node-levelup](https://github.com/rvagg/node-levelup)
-* LevelDown: [https://github.com/rvagg/node-leveldown]
-* MemDown: [https://github.com/rvagg/node-memdown]
+* LevelDown: [https://github.com/rvagg/node-leveldown](https://github.com/rvagg/node-leveldown)
+* MemDown: [https://github.com/rvagg/node-memdown](https://github.com/rvagg/node-memdown)
 * Event-stream: [http://github.com/dominictarr/event-stream](http://github.com/dominictarr/event-stream)
 
 ## LevelDB изнутри
