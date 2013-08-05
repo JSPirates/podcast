@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+    <channel>
+        <title>JSPirates - только аудио</title>
+        <link>http://jspirates.github.io/podcast</link>
+        <language>ru-ru</language>
+        <copyright>&#x2117; &amp; &#xA9; 2013, Григорий Ситнин &amp; Борис Егоров</copyright>
+        <itunes:subtitle>Подкаст о Node.js (аудио-версия)</itunes:subtitle>
+        <itunes:author>Григорий Ситнин, Борис Егоров</itunes:author>
+        <itunes:summary>Приблизительно еженедельный подкаст о Node.js, модулях, подходах и т.д.</itunes:summary>
+        <description>Приблизительно еженедельный подкаст о Node.js, модулях, подходах и т.д.</description>
+        <itunes:image href="https://s3.amazonaws.com/jspirates/cover.jpg" />
+        <itunes:category text="Technology"><itunes:category text="Podcasting"/></itunes:category>
+        <itunes:category text="Technology"><itunes:category text="Software How-To"/></itunes:category>
+
+        <item>
+            <title>JSPirates s01e01 - LevelDB</title>
+            <itunes:subtitle>Эпизод, в котором мы рассказываем о LevelDb и работе со стримами.</itunes:subtitle>
+            <itunes:summary><![CDATA[*** Ссылки на модули ***
+
+Level: https://github.com/Level/level
+LevelUP: https://github.com/rvagg/node-levelup
+LevelDown: https://github.com/rvagg/node-leveldown
+MemDown: https://github.com/rvagg/node-memdown
+Event-stream: http://github.com/dominictarr/event-stream
+
+*** LevelDB изнутри ***
+
+http://leveldb.googlecode.com/svn/trunk/doc/impl.html
+http://www.igvita.com/2012/02/06/sstable-and-log-structured-storage-leveldb/
+
+*** О подкасте ***
+
+Репозиторий подкаста на GitHub-е: https://github.com/JSPirates/podcast
+
+Предлагайте темы и присылайте ссылки на модули через Issues: https://github.com/JSPirates/podcast/issues]]></itunes:summary>
+            <itunes:image href="https://s3.amazonaws.com/jspirates/cover.jpg" />
+            <enclosure url="https://s3.amazonaws.com/jspirates/jsp_s01e01.mp3" length="70834187" type="audio/mpeg" />
+            <guid>https://s3.amazonaws.com/jspirates/jsp_s01e01.mp3</guid>
+            <pubDate>Mon, 05 Aug 2013 13:31:45 GMT</pubDate>
+            <itunes:duration>49:11</itunes:duration>
+        </item>
+    </channel>
+</rss>
