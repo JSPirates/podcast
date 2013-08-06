@@ -12,6 +12,7 @@
         <itunes:image href="https://s3.amazonaws.com/jspirates/cover.jpg" />
         <itunes:category text="Technology"><itunes:category text="Podcasting"/></itunes:category>
         <itunes:category text="Technology"><itunes:category text="Software How-To"/></itunes:category>
+        <pubDate>Tue, 06 Aug 2013 09:31:45 GMT</pubDate>
 
         <item>
             <title>JSPirates s01e01 - LevelDB</title>
