@@ -2,7 +2,7 @@
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
     <channel>
         <title>JSPirates</title>
-        <link>http://jspirates.github.io/podcast</link>
+        <link>http://jspirates.github.io</link>
         <language>ru-ru</language>
         <copyright>&#x2117; &amp; &#xA9; 2013, Григорий Ситнин &amp; Борис Егоров</copyright>
         <itunes:subtitle>Подкаст о Node.js (видео 480p)</itunes:subtitle>
