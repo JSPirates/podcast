@@ -17,6 +17,10 @@
 * **[JSPirates HD](http://itunes.apple.com/ru/podcast?684240414)**
 * **[JSPirates audio](http://itunes.apple.com/ru/podcast?684239776)**
 
+## Просмотр online
+
+* [YouTube](http://www.youtube.com/channel/UCoQvColVafC905L1wyqfjcg)
+
 ## Эпизоды
 
   * s01e01 — Эпизод, в котором мы рассказываем о LevelDb и работе со стримами.
