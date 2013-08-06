@@ -8,15 +8,14 @@
 
 ## Прямая подписка
 
-  * **JSPirates HD** — видео 720p, [https://s3.amazonaws.com/jspirates/jsp_720p.xml](https://s3.amazonaws.com/jspirates/jsp_720p.xml)
-  * **JSPirates** — видео 480p, [https://s3.amazonaws.com/jspirates/jsp_480p.xml](https://s3.amazonaws.com/jspirates/jsp_480p.xml) (файлы в 2 раза меньше)
-  * **JSPirates audio** — только звук, [https://s3.amazonaws.com/jspirates/jsp_audio.xml](https://s3.amazonaws.com/jspirates/jsp_audio.xml) (есть, что послушать ;)
+* **JSPirates HD** — видео 720p, [https://s3.amazonaws.com/jspirates/jsp_720p.xml](https://s3.amazonaws.com/jspirates/jsp_720p.xml)
+* **JSPirates** — видео 480p, [https://s3.amazonaws.com/jspirates/jsp_480p.xml](https://s3.amazonaws.com/jspirates/jsp_480p.xml) (файлы в 2 раза меньше)
+* **JSPirates audio** — только звук, [https://s3.amazonaws.com/jspirates/jsp_audio.xml](https://s3.amazonaws.com/jspirates/jsp_audio.xml) (есть, что послушать ;)
 
 ## Подписка через iTunes
 
-  * **[JSPirates HD](https://itunes.apple.com/ru/podcast?684240414)**
-  * **[JSPirates](https://itunes.apple.com/ru/podcast?684239969)**
-  * **[JSPirates audio](https://itunes.apple.com/ru/podcast?684239776)**
+* **[JSPirates HD](http://itunes.apple.com/ru/podcast?684240414)**
+* **[JSPirates audio](http://itunes.apple.com/ru/podcast?684239776)**
 
 ## Эпизоды
 
