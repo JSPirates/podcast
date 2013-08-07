@@ -6,6 +6,10 @@
 
 Ведущие подкаста: [Борис Егоров](http://github.com/dolphin278) и [Григорий Ситнин](http://github.com/sitnin).
 
+## Просмотр online
+
+* [YouTube](http://www.youtube.com/channel/UCoQvColVafC905L1wyqfjcg)
+
 ## Прямая подписка
 
 * **JSPirates HD** — видео 720p, [https://s3.amazonaws.com/jspirates/jsp_720p.xml](https://s3.amazonaws.com/jspirates/jsp_720p.xml)
@@ -14,12 +18,9 @@
 
 ## Подписка через iTunes
 
-* **[JSPirates HD](http://itunes.apple.com/ru/podcast?684240414)**
-* **[JSPirates audio](http://itunes.apple.com/ru/podcast?684239776)**
-
-## Просмотр online
-
-* [YouTube](http://www.youtube.com/channel/UCoQvColVafC905L1wyqfjcg)
+* **[JSPirates HD](https://itunes.apple.com/ru/podcast/jspirates-hd/id684240414)**
+* **[JSPirates](https://itunes.apple.com/ru/podcast/jspirates/id684239969)**
+* **[JSPirates audio](https://itunes.apple.com/ru/podcast/jspirates-tol-ko-audio/id684239776)**
 
 ## Эпизоды
 
