@@ -7,6 +7,7 @@
 * Node.js Addons: [http://nodejs.org/api/addons.html](http://nodejs.org/api/addons.html)
 * node-gyp: [https://github.com/TooTallNate/node-gyp](https://github.com/TooTallNate/node-gyp)
 * GYP project: [http://code.google.com/p/gyp/](http://code.google.com/p/gyp/)
+* iChing lib: [https://github.com/sitnin/iching](https://github.com/sitnin/iching)
 * Поиск AllThingsNodeRelated: [http://allthingsnoderelated.com](http://allthingsnoderelated.com)
 
 ## AllThingsNodeRelated
