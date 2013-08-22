@@ -1,4 +1,4 @@
-# JSPirates Podcast s01e01
+# JSPirates Podcast 001
 
 Эпизод, в котором мы рассказываем о LevelDb и работе со стримами.
 

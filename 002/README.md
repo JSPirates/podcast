@@ -1,4 +1,4 @@
-# JSPirates Podcast s01e02
+# JSPirates Podcast 002
 
 Создание компилируемых (native) модулей для Node.js
 
