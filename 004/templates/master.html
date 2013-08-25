@@ -36,13 +36,11 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="http://jspirates.com">Сайт подкаста</a></li>
-            <!-- li><a href="http://jspirates.com">Репозиторий эпизода</a></li -->
-            <li><a href="http://passportjs.org">PassportJS</a></li>
+            <li><a href="http://passportjs.org">Passport</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
           {% if user %}
-            <li><a href="#">Выход</a></li>
+            <li><a href="/auth/logout">Выход</a></li>
           {% else %}
             {% if regMode %}
               <li><a href="/">Вход</a></li>

@@ -80,7 +80,7 @@ passport.use(new LocalStrategy(function (username, password, callback) {
 
 // Хэндлеры путей
 app.get('/', function (req, res) {
-    res.render(!!req.user ? "user.html" : "guest.html", { myuser: req.user });
+    res.render(!!req.user ? "user.html" : "guest.html", { user: req.user });
 });
 
 app.get('/register', function (req, res) {
