@@ -95,7 +95,10 @@ app.post('/auth/register', function (req, res) {
         if (error) {
             res.send(500, 'Error registering user');
         } else {
-            res.redirect('/');
+            req.login(user, function(error) {
+                if (error) { res.send(500, error); }
+                else { res.redirect('/'); }
+            });
         }
     });
 });
