@@ -13,6 +13,7 @@
     "connect-leveldb": "",
     "scrypt": "",
     "passport": "",
-    "passport-local": ""
+    "passport-local": "",
+    "passport-facebook": "~1.0.0"
   }
 }

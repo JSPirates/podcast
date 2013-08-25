@@ -34,7 +34,17 @@ function findOrCreateUser(db, profile, callback) {
  */
 function getUser(db, id, callback) {
     console.log('load user with id', id);
-    db.get(id, callback);
+    db.get(id, function (error, doc) {
+        if (error) {
+            if (error.name == 'NotFoundError') {
+                callback();
+            } else {
+                callback(error);
+            }
+        } else {
+            callback(null, doc);
+        }
+    });
 }
 /*
     Сохранить запись о пользователе в БД
