@@ -4,12 +4,14 @@ var nunjucks = require('nunjucks');
 var http = require('http');
 var path = require('path');
 var level = require('level');
+var config = require('./config.json');
 var app = express();
 var user = require('./user');
 var nun = new nunjucks.Environment(new nunjucks.FileSystemLoader('templates'));
 
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
+var FacebookStrategy = require('passport-facebook').Strategy;
 
 // База для хранения пользовательских записей
 var userDb = level('./db/user', { valueEncoding: 'json'});
@@ -78,6 +80,15 @@ passport.use(new LocalStrategy(function (username, password, callback) {
     })
 }));
 
+passport.use(new FacebookStrategy({
+        clientID: config.facebook.id,
+        clientSecret: config.facebook.secret,
+        callbackURL: 'http://jspirates.dev:3000/auth/facebook/callback'
+    },
+    function (accessToken, refreshToken, profile, callback) {
+        api.findOrCreateUser(profile, callback);
+    }));
+
 // Хэндлеры путей
 app.get('/', function (req, res) {
     res.render(!!req.user ? "user.html" : "guest.html", { user: req.user });
@@ -91,11 +102,12 @@ app.post('/auth/register', function (req, res) {
     console.log('new user registers', req.body);
     req.body.provider = 'local';
     req.body.id = req.body.login;
+    req.body.displayName = req.body.login;
     api.storeUser(req.body, function (error, user) {
         if (error) {
             res.send(500, 'Error registering user');
         } else {
-            req.login(user, function(error) {
+            req.login(user, function (error) {
                 if (error) { res.send(500, error); }
                 else { res.redirect('/'); }
             });
@@ -110,6 +122,13 @@ app.get('/auth/logout', function (req, res) {
     req.logout();
     res.redirect('/');
 });
+
+app.get('/auth/facebook', passport.authenticate('facebook'));
+
+app.get('/auth/facebook/callback', passport.authenticate('facebook', {
+    successRedirect: '/',
+    failureRedirect: '/login'
+}));
 
 http.createServer(app).listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));
