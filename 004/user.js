@@ -48,11 +48,24 @@ function storeUser(db, user, callback) {
     });
 }
 
+/*
+    Функция проверки пароля
+ */
+function checkPassword(user, password) {
+    return password == user.password;
+}
+
+function serializeUser(user, callback) {
+    callback(null, prepareId(user));
+}
+
 module.exports = function (db) {
     return {
         findOrCreateUser: findOrCreateUser.bind(null, db),
-        serializeUser: storeUser.bind(null, db),
+        serializeUser: serializeUser,
         deserializeUser: getUser.bind(null, db),
-        getUser: getUser.bind(null, db)
+        getUser: getUser.bind(null, db),
+        storeUser: storeUser.bind(null, db),
+        checkPassword: checkPassword
     }
 };

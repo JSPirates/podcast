@@ -9,7 +9,7 @@
     "express": "",
     "connect-flash": "",
     "nunjucks": "",
-    "level": "",
+    "level": "~0.15.0",
     "connect-leveldb": "",
     "scrypt": "",
     "passport": "",
