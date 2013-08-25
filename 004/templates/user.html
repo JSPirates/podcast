@@ -1,11 +1,9 @@
-<html>
-	<head>
-		<title>Passport Test</title>
-		<http-equiv name="Content-Type", "text/html; encoding=utf-8">
-	</head>
-	<body>
-		<h1>Пользователь</h1>
+{% extends "master.html" %}
+
+{% block content %}
+	<div class="jumbotron">
+		<h1>Ну, здравствуй, гость</h1>
 		<p>&mdash; Мариванна, можно <a href="/auth/login">выйти</a>?</p>
 		<p>&mdash; Уйди, Петров, с глаз моих долой... И без родителей не возвращайся!</p>
-	</body>
-</html>
+	</div>
+{% endblock %}
