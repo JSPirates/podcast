@@ -33,13 +33,13 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', function (req, res) {
-	res.render(!!req.user ? "user.html" : "guest.html");
+	res.render(!!req.user ? "user.html" : "guest.html", { myuser: req.user });
 });
 
 app.get('/account/register', function (req, res) {
 });
 
-app.get('/auth/login', function (req, res) {
+app.post('/auth/login', function (req, res) {
 });
 
 app.get('/auth/logout', function (req, res) {
