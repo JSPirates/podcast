@@ -6,4 +6,4 @@
 
 Ведущие подкаста: [Борис Егоров](http://github.com/dolphin278) и [Григорий Ситнин](http://github.com/sitnin).
 
-Сайт подкаста: [http://jspirates.com](jspirates.com)
+Сайт подкаста: [http://jspirates.com](http://jspirates.com)
