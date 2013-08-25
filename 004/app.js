@@ -12,6 +12,7 @@ var nun = new nunjucks.Environment(new nunjucks.FileSystemLoader('templates'));
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var FacebookStrategy = require('passport-facebook').Strategy;
+var TwitterStrategy = require('passport-twitter').Strategy;
 
 // База для хранения пользовательских записей
 var userDb = level('./db/user', { valueEncoding: 'json'});
@@ -89,6 +90,14 @@ passport.use(new FacebookStrategy({
         api.findOrCreateUser(profile, callback);
     }));
 
+passport.use(new TwitterStrategy({
+    consumerKey: config.twitter.key,
+    consumerSecret: config.twitter.secret,
+    callbackURL: 'http://jspirates.dev:3000/auth/twitter/callback'
+}, function (token, tokenSecret, profile, callback) {
+    api.findOrCreateUser(profile, callback);
+}));
+
 // Хэндлеры путей
 app.get('/', function (req, res) {
     res.render(!!req.user ? "user.html" : "guest.html", { user: req.user });
@@ -126,6 +135,13 @@ app.get('/auth/logout', function (req, res) {
 app.get('/auth/facebook', passport.authenticate('facebook'));
 
 app.get('/auth/facebook/callback', passport.authenticate('facebook', {
+    successRedirect: '/',
+    failureRedirect: '/login'
+}));
+
+app.get('/auth/twitter', passport.authenticate('twitter'));
+
+app.get('/auth/twitter/callback', passport.authenticate('twitter', {
     successRedirect: '/',
     failureRedirect: '/login'
 }));
