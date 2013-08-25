@@ -56,7 +56,11 @@ passport.use(new LocalStrategy(function (username, password, callback) {
     var userId = 'local:' + username;
     api.getUser(userId, function (error, user) {
         if (error) {
-            callback(error);
+            if (error.name == 'NotFoundError') {
+                callback(null, false, {message: 'Incorrect username'});
+            } else {
+                callback(error);
+            }
         } else {
             if (user) {
                 // Пользователь найден, далее проверяем пароль
