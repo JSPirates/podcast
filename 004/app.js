@@ -36,13 +36,19 @@ app.get('/', function (req, res) {
 	res.render(!!req.user ? "user.html" : "guest.html", { myuser: req.user });
 });
 
-app.get('/account/register', function (req, res) {
+app.get('/register', function (req, res) {
+	res.render("registration.html", { regMode: true });
+});
+
+app.post('/auth/register', function (req, res) {
 });
 
 app.post('/auth/login', function (req, res) {
 });
 
 app.get('/auth/logout', function (req, res) {
+	req.logout();
+	res.redirect('/');
 });
 
 http.createServer(app).listen(app.get('port'), function() {

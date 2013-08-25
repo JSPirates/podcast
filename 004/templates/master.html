@@ -36,12 +36,18 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
+            <li><a href="http://jspirates.com">Сайт подкаста</a></li>
             <!-- li><a href="http://jspirates.com">Репозиторий эпизода</a></li -->
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://jspirates.com">Сайт подкаста</a></li>
           {% if user %}
             <li><a href="#">Выход</a></li>
+          {% else %}
+            {% if regMode %}
+              <li><a href="/">Вход</a></li>
+            {% else %}
+              <li><a href="/register">Регистрация</a></li>
+            {% endif %}
           {% endif %}
           </ul>
         </div><!--/.nav-collapse -->
