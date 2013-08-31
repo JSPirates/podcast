@@ -1,4 +1,4 @@
-# JSPirates Podcast 003
+# JSPirates Podcast 004
 
 Авторизация в социальных сетях с помощью Passport
 
