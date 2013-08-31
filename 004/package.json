@@ -1,0 +1,20 @@
+{
+  "name": "jsp_004",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "",
+    "connect-flash": "",
+    "nunjucks": "",
+    "level": "~0.15.0",
+    "connect-leveldb": "",
+    "scrypt": "",
+    "passport": "",
+    "passport-local": "",
+    "passport-facebook": "~1.0.0",
+    "passport-twitter": "~1.0.0"
+  }
+}

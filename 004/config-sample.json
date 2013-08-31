@@ -1,0 +1,10 @@
+{
+    "facebook": {
+        "id": "Facebook App Id",
+        "secret": "Facebook App Secret"
+    },
+    "twitter": {
+    	"key": "Twitter consumer key",
+    	"secret": "Twitter consumer secret"
+    }
+}

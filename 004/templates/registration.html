@@ -1,0 +1,12 @@
+{% extends "master.html" %}
+
+{% block content %}
+	<div>
+		<form class="form-signin" action="/auth/register" method="POST">
+		<h1>Как вас представить?</h1>
+			<input name="login" type="text" class="form-control" placeholder="Логин" autofocus>
+			<input name="password" type="password" class="form-control" placeholder="Пароль">
+			<button class="btn btn-lg btn-primary btn-block" type="submit">Зарегистрироваться</button>
+		</form>
+	</div>
+{% endblock %}

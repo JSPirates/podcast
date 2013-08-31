@@ -1,0 +1,15 @@
+{% extends "master.html" %}
+
+{% block content %}
+	<div>
+		<form class="form-signin" action="/auth/login" method="POST">
+		<h1>Ну, входи, гость...</h1>
+			<input name="username" type="text" class="form-control" placeholder="Логин" autofocus>
+			<input name="password" type="password" class="form-control" placeholder="Пароль">
+			<button class="btn btn-lg btn-success btn-block" type="submit">Войти</button>
+			<div style="text-align: center; padding: 0.3em;">или</div>
+			<a href="/auth/facebook" class="btn btn-lg btn-primary btn-block">Facebook</a>
+			<a href="/auth/twitter" class="btn btn-lg btn-primary btn-block">Twitter</a>
+		</form>
+	</div>
+{% endblock %}
