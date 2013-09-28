@@ -6,7 +6,7 @@
 
 ## Ссылки
 
-* S3 Logs Parser (тестируемый в подкасте код): [http://github.com/JSPirates/s3logs](http://github.com/JSPirates/s3logs)
+* S3 Logs Parser (тестируемый в подкасте код): [http://github.com/JSPirates/s3logs/tree/jsp_007](http://github.com/JSPirates/s3logs/tree/jsp_007)
 * node-unit: [http://github.com/caolan/nodeunit](http://github.com/caolan/nodeunit)
 * mocha: [http://visionmedia.github.io/mocha/](http://visionmedia.github.io/mocha/)
 * vows: [http://vowsjs.org/](http://vowsjs.org/)
