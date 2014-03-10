@@ -21,12 +21,13 @@ var pipeline = es.pipeline(
 );
 
 pipeline.on('close', function () {
-    var prefix = "iOS";
+    var end   = "iOS"
+       ,start = end + "\u9999";
     var prefixStream = db.createReadStream({
-        start: prefix + '\u9999',
-        end: prefix,
+        start: start,
+        end: end,
         limit: 1,
-        reverse: true
+        reverse: start > end
     });
-    prefixStream.on('data', consol.log.bind(console, "data->"));
+    prefixStream.on('data', console.log.bind(console, "data->"));
 });
