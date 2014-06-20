@@ -2,5 +2,7 @@
   "name": "jsp-s01e01",
   "version": "1.0.0",
   "dependencies": {
+    "level": "0.*",
+    "event-stream": "3.*"
   }
 }
